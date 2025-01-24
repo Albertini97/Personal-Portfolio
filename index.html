@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Portfolio de Alberto Labarta Holgado, Ingeniero de Software especializado en desarrollo web.">
+    <meta name="keywords" content="Alberto Labarta Holgado, Portfolio, Desarrollo Web, Ingeniero de Software">
+    <meta name="author" content="Alberto Labarta Holgado">
+    <title>Portfolio - Alberto Labarta Holgado</title>
+</head>
+<body>
+    <header>
+        <h1>Alberto Labarta Holgado</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" data-page="inicio">Inicio</a></li>
+                <li><a href="#proyectos" data-page="proyectos">Proyectos</a></li>
+                <li><a href="#articulos" data-page="articulos">Artículos</a></li>
+                <li><a href="#educacion" data-page="educacion">Educación</a></li>
+                <li><a href="#experiencia" data-page="experiencia">Experiencia</a></li>
+                <li><a href="#contacto" data-page="contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón para cambiar entre modo claro y oscuro -->
+        <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
+    </header>
+    <main id="content">
+        <!-- Contenido dinámico -->
+        <section id="inicio" class="page-content">
+            <h2>Sobre mí</h2>
+            <div class="profile-image-container">
+                <img src="images/foto-perfil.jpg" alt="Foto de Alberto Labarta Holgado" width="180" height="180">
+            </div>
+            <p>
+                Soy un <strong>Ingeniero de Software</strong> especializado en desarrollo web, con experiencia en la creación de aplicaciones escalables y eficientes. 
+                Me apasiona resolver problemas complejos mediante soluciones tecnológicas innovadoras y bien diseñadas.
+            </p>
+            <p>
+                Tengo experiencia en tecnologías como <strong>HTML, CSS, JavaScript, React, Node.js y bases de datos SQL/NoSQL</strong>. 
+                Además, he trabajado en proyectos que involucran desarrollo frontend y backend, asegurando una experiencia de usuario fluida y un rendimiento óptimo.
+            </p>
+            <p>
+                Conéctate conmigo en <a href="https://www.linkedin.com/in/alberto-labarta-holgado/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+                para conocer más sobre mi experiencia profesional y proyectos.
+            </p>
+        </section>
+
+        <section id="proyectos" class="page-content" style="display: none;">
+            <h2>Proyectos</h2>
+            <article class="proyecto">
+                <h3>HTML Only Portfolio</h3>
+                <p>
+                    Un portfolio minimalista desarrollado únicamente con HTML, enfocado en la estructura semántica y la accesibilidad.
+                </p>
+            </article>
+            <article class="proyecto">
+                <h3>Calculadora Interactiva</h3>
+                <p>
+                    Una calculadora web desarrollada con HTML, CSS y JavaScript, que permite realizar operaciones matemáticas básicas.
+                </p>
+            </article>
+            <article class="proyecto">
+                <h3>Sistema de Gestión de Tareas</h3>
+                <p>
+                    Una aplicación web para gestionar tareas, desarrollada con React en el frontend y Node.js en el backend.
+                </p>
+            </article>
+        </section>
+
+        <section id="articulos" class="page-content" style="display: none;">
+            <h2>Artículos</h2>
+            <article>
+                <h3>Artículo 1</h3>
+                <p>Resumen del artículo 1.</p>
+            </article>
+            <article>
+                <h3>Artículo 2</h3>
+                <p>Resumen del artículo 2.</p>
+            </article>
+        </section>
+
+        <section id="educacion" class="page-content" style="display: none;">
+            <h2>Educación</h2>
+            <div class="educacion-item">
+                <h3>Experto en Análisis de Datos y Big Data</h3>
+                <p>
+                    <strong>Escuela de Organización Industrial</strong> - 220 horas<br>
+                    <em>2024 - 2024</em><br>
+                    Tecnologías y habilidades: Python, Bases de datos SQL, PowerBI, Toma de decisiones basadas en datos, Gestión de Proyectos Agile (Scrum), Big Data, Análisis de datos, Spark, Visualización de datos con MongoDB.
+                </p>
+            </div>
+            <div class="educacion-item">
+                <h3>Certificado de Profesionalidad en Desarrollo de Aplicaciones Web</h3>
+                <p>
+                    <strong>REINA VICTORIA FORMACION SL</strong> - 520 horas<br>
+                    <em>Enero 2024 - Junio 2024</em><br>
+                    Tecnologías y habilidades: HTML5, CSS3, JavaScript, Python, SQL, Git.
+                </p>
+            </div>
+            <div class="educacion-item">
+                <h3>FP Grado Medio en Informática y Telecomunicaciones</h3>
+                <p>
+                    <strong>IES Santo Domingo de Silos</strong><br>
+                    <em>2016 - 2018</em><br>
+                    Durante este programa, adquirí conocimientos fundamentales en:
+                    <ul>
+                        <li><strong>Protocolos de comunicación:</strong> Estudio de protocolos como TCP/IP, HTTP, FTP y otros esenciales para la transmisión de datos en redes.</li>
+                        <li><strong>Configuración y mantenimiento de redes:</strong> Instalación y configuración de redes locales (LAN), routers, switches y firewalls.</li>
+                        <li><strong>Seguridad en redes:</strong> Conceptos básicos de seguridad informática, incluyendo firewalls, VPNs y detección de intrusiones.</li>
+                        <li><strong>Sistemas operativos:</strong> Manejo de sistemas operativos como Windows y Linux, incluyendo la administración de servidores.</li>
+                        <li><strong>Hardware y software:</strong> Conocimientos en ensamblaje y mantenimiento de equipos informáticos, así como la instalación y configuración de software.</li>
+                    </ul>
+                    Este programa sentó las bases para mi carrera en tecnología, proporcionándome una comprensión sólida de las redes y los sistemas informáticos.
+                </p>
+            </div>
+        </section>
+
+        <section id="experiencia" class="page-content" style="display: none;">
+            <h2>Experiencia Laboral</h2>
+            <div class="experiencia-item">
+                <h3>Monitor de Tiempo Libre</h3>
+                <p>
+                    <strong>Cocoroom</strong> · Jornada completa<br>
+                    <em>Agosto 2020 - Abril 2022 · 1 año 9 meses</em><br>
+                    Zaragoza, Aragón, España
+                </p>
+                <ul>
+                    <li>Organización y planificación de actividades recreativas, deportivas y culturales para niños y jóvenes.</li>
+                    <li>Supervisión de actividades, garantizando la seguridad y bienestar de los participantes.</li>
+                    <li>Atención y cuidado de los niños, asegurando su protección en todo momento.</li>
+                    <li>Comunicación efectiva con los padres para informar sobre el progreso y actividades de sus hijos.</li>
+                    <li>Administración y mantenimiento de recursos y materiales utilizados en las actividades.</li>
+                    <li>Colaboración con otros profesionales para ofrecer una variedad de actividades adecuadas para los participantes.</li>
+                    <li>Evaluación y mejora continua de los programas de ocio y tiempo libre.</li>
+                </ul>
+            </div>
+            <div class="experiencia-item">
+                <h3>Help Desk Support Specialist</h3>
+                <p>
+                    <strong>DXC Technology</strong> · Jornada completa<br>
+                    <em>Enero 2019 - Agosto 2021 · 2 años 8 meses</em><br>
+                    Zaragoza, Aragón, España
+                </p>
+                <ul>
+                    <li>Atención y resolución de solicitudes de soporte técnico de usuarios.</li>
+                    <li>Diagnóstico y solución de problemas de hardware y software.</li>
+                    <li>Gestión de incidentes y solicitudes en el sistema de tickets.</li>
+                    <li>Escalado de problemas complejos a niveles superiores cuando era necesario.</li>
+                    <li>Monitoreo y mantenimiento del desempeño de los sistemas y servicios.</li>
+                </ul>
+            </div>
+            <div class="experiencia-item">
+                <h3>Camarero</h3>
+                <p>
+                    <strong>Be a Legend</strong> · Jornada completa<br>
+                    <em>Junio 2020 - Julio 2020 · 2 meses</em><br>
+                    Zaragoza, Aragón, España
+                </p>
+                <ul>
+                    <li>Atención al cliente en un entorno de hostelería.</li>
+                    <li>Servicio de alimentos y bebidas.</li>
+                    <li>Limpieza y mantenimiento de la sala.</li>
+                    <li>Control de inventario y gestión de pagos.</li>
+                    <li>Colaboración con otros empleados para garantizar un servicio eficiente.</li>
+                </ul>
+            </div>
+            <div class="experiencia-item">
+                <h3>Auxiliar Informático</h3>
+                <p>
+                    <strong>INFORMATICA TORRERO SL</strong><br>
+                    <em>Mayo 2016 - Julio 2016 · 3 meses</em><br>
+                    Zaragoza, Aragón, España
+                </p>
+                <ul>
+                    <li>Reparación de equipos informáticos con fallos de hardware.</li>
+                    <li>Formateo de discos duros e instalación de sistemas operativos.</li>
+                    <li>Reemplazo de componentes defectuosos, como discos duros y memorias.</li>
+                    <li>Configuración de software y sistemas operativos.</li>
+                    <li>Mantenimiento preventivo de equipos informáticos.</li>
+                    <li>Diagnóstico de fallos y propuesta de soluciones técnicas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="page-content" style="display: none;">
+            <h2>Contacto</h2>
+            <div class="contacto-container">
+                <div class="contacto-info">
+                    <h3>Información de contacto</h3>
+                    <p>
+                        Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:
+                    </p>
+                    <ul>
+                        <li><strong>Email:</strong> <a href="mailto:soyalbertolabartaholgado@gmail.com">soyalbertolabartaholgado@gmail.com</a></li>
+                        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/alberto-labarta-holgado/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-formulario">
+                    <h3>Envíame un mensaje</h3>
+                    <form action="enviar_formulario.php" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+                        <button type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alberto Labarta Holgado</p>
+        <p>
+            Conéctate conmigo en <a href="https://www.linkedin.com/in/alberto-labarta-holgado/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+            para conocer más sobre mi experiencia y proyectos.
+        </p>
+    </footer>
+
+    <!-- Script para manejar el modo oscuro y la navegación dinámica -->
+    <script>
+        // Función para mostrar la sección seleccionada y ocultar las demás
+        function showPage(pageId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('.page-content').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Mostrar la sección seleccionada
+            const selectedSection = document.getElementById(pageId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Manejar clics en los enlaces de navegación
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Evitar la recarga de la página
+                const pageId = link.getAttribute('href').substring(1); // Obtener el ID de la sección
+                showPage(pageId); // Mostrar la sección correspondiente
+                history.pushState(null, null, `#${pageId}`); // Actualizar la URL en el navegador
+            });
+        });
+
+        // Mostrar la sección correspondiente al cargar la página
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1); // Obtener el hash de la URL
+            const defaultPage = hash || 'inicio'; // Mostrar "inicio" si no hay hash
+            showPage(defaultPage);
+        });
+
+        // Manejar el botón de modo oscuro
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = '☀️ Modo Claro';
+        }
+
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkModeEnabled = body.classList.contains('dark-mode');
+
+            if (isDarkModeEnabled) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleButton.textContent = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleButton.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>

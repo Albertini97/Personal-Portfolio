@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Ponte en contacto con Alberto Labarta Holgado.">
+    <meta name="keywords" content="Alberto Labarta Holgado, Contacto, Desarrollo Web">
+    <meta name="author" content="Alberto Labarta Holgado">
+    <title>Contacto - Alberto Labarta Holgado</title>
+</head>
+<body>
+    <header>
+        <h1>Alberto Labarta Holgado</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón para cambiar entre modo claro y oscuro -->
+        <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
+    </header>
+    <main>
+        <section>
+            <h2>Contacto</h2>
+            <form action="enviar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alberto Labarta Holgado</p>
+    </footer>
+
+    <!-- Script para manejar el modo oscuro -->
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        // Verificar si el usuario ya tiene una preferencia de modo oscuro
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+        // Aplicar el modo oscuro si está habilitado
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = '☀️ Modo Claro';
+        }
+
+        // Cambiar entre modo claro y oscuro
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkModeEnabled = body.classList.contains('dark-mode');
+
+            // Guardar la preferencia del usuario en localStorage
+            if (isDarkModeEnabled) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleButton.textContent = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleButton.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>

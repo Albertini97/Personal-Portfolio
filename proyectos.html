@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Proyectos de Alberto Labarta Holgado, Ingeniero de Software especializado en desarrollo web.">
+    <meta name="keywords" content="Alberto Labarta Holgado, Proyectos, Desarrollo Web">
+    <meta name="author" content="Alberto Labarta Holgado">
+    <title>Proyectos - Alberto Labarta Holgado</title>
+</head>
+<body>
+    <header>
+        <h1>Alberto Labarta Holgado</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="articulos.html">Artículos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón para cambiar entre modo claro y oscuro -->
+        <button id="toggle-dark-mode">🌙 Modo Oscuro</button>
+    </header>
+    <main>
+        <section>
+            <h2>Proyectos</h2>
+            <article class="proyecto">
+                <h3>HTML Only Portfolio</h3>
+                <p>
+                    Un portfolio minimalista desarrollado únicamente con HTML, enfocado en la estructura semántica y la accesibilidad.
+                </p>
+            </article>
+            <article class="proyecto">
+                <h3>Calculadora Interactiva</h3>
+                <p>
+                    Una calculadora web desarrollada con HTML, CSS y JavaScript, que permite realizar operaciones matemáticas básicas.
+                </p>
+            </article>
+            <article class="proyecto">
+                <h3>Sistema de Gestión de Tareas</h3>
+                <p>
+                    Una aplicación web para gestionar tareas, desarrollada con React en el frontend y Node.js en el backend.
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alberto Labarta Holgado</p>
+        <p>
+            Conéctate conmigo en <a href="https://www.linkedin.com/in/alberto-labarta-holgado/" target="_blank" rel="noopener noreferrer">LinkedIn</a> 
+            para conocer más sobre mi experiencia y proyectos.
+        </p>
+    </footer>
+
+    <!-- Script para manejar el modo oscuro -->
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        const body = document.body;
+
+        // Verificar si el usuario ya tiene una preferencia de modo oscuro
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+        // Aplicar el modo oscuro si está habilitado
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            toggleButton.textContent = '☀️ Modo Claro';
+        }
+
+        // Cambiar entre modo claro y oscuro
+        toggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDarkModeEnabled = body.classList.contains('dark-mode');
+
+            // Guardar la preferencia del usuario en localStorage
+            if (isDarkModeEnabled) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleButton.textContent = '☀️ Modo Claro';
+            } else {
+                localStorage.setItem('darkMode', 'disabled');
+                toggleButton.textContent = '🌙 Modo Oscuro';
+            }
+        });
+    </script>
+</body>
+</html>
